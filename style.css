@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+.logo{
+    width: 50px;
+}
+.main-container{
+    display:flex;
+    min-height:100vh ;
+}
+.left-container{
+    width: 40%;
+    background: url("https://image.freepik.com/free-photo/movement-red-smoke-spread-black-background_23-2148092533.jpg");
+    background-size: cover;
+    background-position: 50% 30%;
+    color: #dcdde1;
+    line-height: 25px;
+    position: relative;
+    display: flex;
+    align-items: flex-end; 
+
+}
+.left-container .black-logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.left-container .content{
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 30px;
+}
+.left-container .content h2{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.right-container{
+    background: #dcdde1;
+    color: #353b48;
+    width:60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-container .upper-box{
+position:absolute;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+top: 40px;
+}
+.right-container .upper-box .sign-in{
+    margin-right: 30px;
+}
+.right-container .upper-box .white-logo{
+    margin-left:25px;
+}
+.right-container .upper-box .sign-in p{
+    display: inline;
+    margin-right: 20px;
+}
+.right-container .upper-box .sign-in a{
+ border: 1px solid #353b48;
+ padding:5px 20px;
+ color: #353b48;
+ border-radius: 25px;
+ transition: 0.3s;
+}
+.right-container .upper-box .sign-in a:hover{
+    background: #353b48;
+    color: #dcdde1;
+    box-shadow: 5px 5px 20px #353b48;
+}
+.right-container .midlle-box{
+margin-top: 100px;
+height: 600px;
+box-sizing: border-box;
+padding: 20px;
+}
+.right-container .midlle-box .form-container{
+    margin-top: 40px;
+}
+.right-container .midlle-box .form-container .form-box{
+    margin-top: 20px
+    width:100%;
+}
+.right-container .midlle-box .form-container label{
+    display:block;
+    margin:5px;
+}
+.right-container .midlle-box .form-container input{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    border: 1px solid #353b48; 
+    background: #dcdde1;
+    border-radius: 10px;
+}
+.right-container .midlle-box .form-container input[type="submit"]{
+    margin-top: 40px;
+    margin-left:50%;
+    width: 120px;
+    color: aliceblue;
+    background: #353b48;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.right-container .midlle-box .form-container p{
+    margin-top: 20px;
+    text-align: center;
+}
+@media(max-width:1100px){
+    .left-container{
+        display: none;
+    }
+    .right-container{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .right-container .upper-box .sign-in p{
+        display: none;
+
+    }
+}
