@@ -102,6 +102,7 @@ padding: 20px;
     border: 1px solid #353b48; 
     background: #dcdde1;
     border-radius: 10px;
+    outline: none;
 }
 .right-container .midlle-box .form-container input[type="submit"]{
     margin-top: 40px;
